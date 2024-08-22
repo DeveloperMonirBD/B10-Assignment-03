@@ -23,7 +23,7 @@
 <body class="font-manrope h-screen">
 
   <!-- Header  -->
-  <header class="bg-gradient-to-r from-white to-gray-200">
+  <header class="bg-gradient-to-br from-white via-slate-100 to-transparent mb-20">
     <!-- Navbar -->
     <nav class="container mx-auto p-3 flex justify-between items-center ">
 
@@ -35,11 +35,11 @@
 
       <!-- Main Nav  -->
       <div id="nav-menu" class="hidden lg:flex gap-12">
-        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Home</a>
-        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Services</a>
-        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Portfolio</a>
-        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Blogs</a>
-        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Contact Us</a>
+        <a href="#" class="font-bold text-slate-500 hover:text-slate-800">Home</a>
+        <a href="#" class="font-bold text-slate-500 hover:text-slate-800">Services</a>
+        <a href="#" class="font-bold text-slate-500 hover:text-slate-800">Portfolio</a>
+        <a href="#" class="font-bold text-slate-500 hover:text-slate-800">Blogs</a>
+        <a href="#" class="font-bold text-slate-500 hover:text-slate-800">Contact Us</a>
       </div>
 
 
@@ -58,7 +58,6 @@
 
         <!-- Book Consult btn  -->
         <button class="hidden lg:flex gap-2 items-center bg-greenYello px-5 py-3 rounded-full">
-          <img src="./assets/asset 1.svg" alt="">
           <span class="text-lg font-bold font-display">Book Consult</span>
           <i class="-rotate-45 bg-black text-white p-2 rounded-full fa-solid fa-arrow-right"></i>
         </button>
@@ -104,11 +103,29 @@
     </nav>
 
     <!-- Hero section  -->
-    <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
-      <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col">
-        <div id="version-text"></div>
+    <section id="hero">
+      <div class="min-h-screen">
+        <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col">
+          <!-- banner img  -->
+          <img class="object-cover" src="./assets/banner.png" alt="">
+          <!-- banner text  -->
+          <div id="banner-text" class="flex flex-col items-center justify-center gap-6">
+            <h1 class=" text-4xl md:text-5xl font-extrabold text-center ">A barn house of this design has a striking
+              appearance</h1>
+            <p class="text-center font-medium md:w-2/3">The barn house captivates with its blend of rustic charm and
+              modern
+              sophistication, featuring weathered wood, sleek
+              metal accents, and large windows that flood the space with natural light.</p>
+
+            <!-- banner button  -->
+            <button class="gap-2 items-center bg-greenLight px-5 py-3 rounded-full">
+              <span class="text-lg font-extrabold font-display">View Details</span>
+              <i class="-rotate-45 bg-greenYello text-black p-2 rounded-full fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
   </header>
 

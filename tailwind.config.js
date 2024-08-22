@@ -4,7 +4,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                greenYello: '#ABEF5F'
+                greenYello: '#ABEF5F',
+                greenLight: '#ABEF5F80'
             },
             fontFamily: {
                 manrope: ['Manrope', 'sans-serif']
