@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <!-- main css link  -->
   <link rel="stylesheet" href="output.css">
   <!-- =============================================
-    * Template Name: Rinterio 
+    * Template Name: Rinterio Project
     * Author: Md. Monirul Islam
     * Email: mrmonir0558@gmail.com
     -----------------------------------------------
@@ -20,20 +20,93 @@
     =============================================== -->
 </head>
 
-<body>
+<body class="font-manrope h-screen">
 
-  <!-- Navbar  -->
-  <nav></nav>
+  <!-- Header  -->
+   <header class="bg-gradient-to-r from-white to-gray-200">
+    <!-- Navbar -->
+    <nav class="container mx-auto p-3 flex justify-between items-center ">
+    
+      <!-- logo  -->
+      <a href="#" id="brand" class="flex items-center gap-2">
+        <i class="-rotate-45 bg-greenYello p-2 rounded-full text-xl fa-solid fa-arrow-right"></i>
+        <span class="text-3xl font-bold">Rinterio</span>
+      </a>
+           
+      <!-- Main Nav  -->
+      <div id="nav-menu" class="hidden lg:flex gap-12">
+        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Home</a> 
+        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Services</a> 
+        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Portfolio</a>
+        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Blogs</a>
+        <a href="#" class="font-bold text-slate-400 hover:text-slate-700">Contact Us</a>
+      </div>
 
+      
+    
+      <!-- Src, Cart and Book Consult btn  -->
+      <div class="hidden lg:flex gap-3 justify-center items-center ">
+        <!-- src btn  -->
+        <button class="hidden lg:flex gap-2 justify-center items-center bg-white w-12 h-12 rounded-full">
+          <i class=" text-slate-500 text-xl fa-solid fa-magnifying-glass"></i>
+        </button>
+        
+        <!-- cart btn  -->
+        <button class=" hidden lg:flex gap-2 justify-center items-center bg-white w-12 h-12 rounded-full">
+          <i class=" text-slate-500 text-lg fa-solid fa-cart-shopping"></i>
+        </button> 
+
+        <!-- Book Consult btn  -->
+        <button class="hidden lg:flex gap-2 items-center bg-greenYello px-5 py-3 rounded-full">
+          <img src="./assets/asset 1.svg" alt="">
+          <span class="text-lg font-bold font-display">Book Consult</span>
+          <i class="-rotate-45 bg-black text-white p-2 rounded-full fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    
+      <!-- Hamburger btn  -->
+      <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+      </button>
+    
+      <!-- Nav Dialog  -->
+      <div id="nav-dialog" class="hidden fixed z-10 lg:hidden bg-white inset-0">
+        <div id="nav-bar" class="flex justify-between p-2">
+          <a href="#" id="brand" class="flex items-center gap-2">
+            <i class="-rotate-45 bg-greenYello p-2 rounded-full text-xl fa-solid fa-arrow-right"></i>
+            <span class="text-3xl font-bold">Rinterio</span>
+          </a>
+    
+          <!-- X-Mark btn  -->
+          <button class="p-3 gl:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-gray-600"></i>
+          </button>
+        </div>
+    
+        <!-- X-Mark Nav  -->
+        <div class="mt-4">
+          <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+          <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Docs</a>
+          <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Changelog</a>
+          <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blogs</a>
+          <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
+        </div>
+    
+        <!-- hr-div line -->
+        <div class="h-[1px] bg-gray-300"></div>
+    
+        <!-- Electron btn  -->
+        <button class=" w-full m-3 p-3 flex gap-2 items-center hover:bg-gray-50  rounded-lg">
+          <img src="./assets/asset 1.svg" alt="">
+          <span class="text-lg font-bold font-display">Book Consult</span>
+        </button>
+      </div>
+    </nav>
+   </header>
+  
   <!-- Main  -->
   <main>
-    <button class="btn btn-active">Default</button>
-    <button class="btn btn-active btn-neutral">Neutral</button>
-    <button class="btn btn-active btn-primary">Primary</button>
-    <button class="btn btn-active btn-secondary">Secondary</button>
-    <button class="btn btn-active btn-accent">Accent</button>
-    <button class="btn btn-active btn-ghost">Ghost</button>
-    <button class="btn btn-active btn-link">Link</button>
+
   </main>
 
   <!-- Footer  -->
